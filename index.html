@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <title>Hello, world!</title>
+</head>
+
+<body style="background: #00DCB4">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-4 text-center">
+                <h1>Hello, World</h1>
+            </div>
+            <div class="col-lg-8 text-center">
+                <canvas width="300" height="300" id="myCanvas">
+                    <p>Anything in here will be replaced on browsers that support the canvas element</p>
+                </canvas>
+            </div>
+        </div>
+    </div>
+
+    <div id="tags">
+        <ul>
+            <li>
+                <a href="http://www.google.com" target="_blank">Google</a>
+            </li>
+            <li>
+                <a href="/fish">Fish</a>
+            </li>
+            <li>
+                <a href="/chips">Chips</a>
+            </li>
+            <li>
+                <a href="/salt">Salt</a>
+            </li>
+            <li>
+                <a href="/vinegar">Vinegar</a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="tagcanvas.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        window.onload = function () {
+            try {
+                TagCanvas.Start('myCanvas', 'tags', {
+                    textColour: '#fff',
+                    outlineColour: '#ff00ff',
+                    reverse: true,
+                    depth: 0.8,
+                    maxSpeed: 0.05,
+                    hideTags: true,
+                    wheelZoom: false,
+                    pinchZoom: false
+                });
+            } catch (e) {
+                // something went wrong, hide the canvas container
+                document.getElementById('myCanvasContainer').style.display = 'none';
+            }
+        };
+    </script>
+</body>
+
+</html>
