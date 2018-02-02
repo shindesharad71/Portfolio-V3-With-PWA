@@ -18,7 +18,7 @@
                 <h1>Hello, World</h1>
             </div>
             <div class="col-lg-8 text-center">
-                <canvas width="300" height="300" id="myCanvas">
+                <canvas width="450" height="500" id="myCanvas">
                     <p>Anything in here will be replaced on browsers that support the canvas element</p>
                 </canvas>
             </div>
@@ -27,21 +27,20 @@
 
     <div id="tags">
         <ul>
-            <li>
-                <a href="http://www.google.com" target="_blank">Google</a>
-            </li>
-            <li>
-                <a href="/fish">Fish</a>
-            </li>
-            <li>
-                <a href="/chips">Chips</a>
-            </li>
-            <li>
-                <a href="/salt">Salt</a>
-            </li>
-            <li>
-                <a href="/vinegar">Vinegar</a>
-            </li>
+            <li><a href="#">HTML5</a></li>
+            <li><a href="#">CSS3</a></li>
+            <li><a href="#">JS</a></li>
+            <li><a href="#">PHP</a></li>
+            <li><a href="#">MySQL</a></li>
+            <li><a href="#">Node JS</a></li>
+            <li><a href="#">MongoDB</a></li>
+            <li><a href="#">Angular</a></li>
+            <li><a href="#">React</a></li>
+            <li><a href="#">Vue</a></li>
+            <li><a href="#">Ionic</a></li>
+            <li><a href="#">Docker</a></li>
+            <li><a href="#">WordPress</a></li>
+            <li><a href="#">GIT</a></li>            
         </ul>
     </div>
 
@@ -54,15 +53,16 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
     <script src="tagcanvas.min.js" type="text/javascript"></script>
+    <script src="tagcanvas-accel.js" type="text/javascript"></script>
     <script type="text/javascript">
         window.onload = function () {
             try {
                 TagCanvas.Start('myCanvas', 'tags', {
                     textColour: '#fff',
-                    outlineColour: '#ff00ff',
+                    outlineColour: '#fff',
                     reverse: true,
                     depth: 0.8,
-                    maxSpeed: 0.05,
+                    maxSpeed: 0.015,
                     hideTags: true,
                     wheelZoom: false,
                     pinchZoom: false
