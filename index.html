@@ -1,60 +1,17 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="en">
 
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- CSS -->
-    <style>
-        /* This only works with JavaScript, if it's not present, don't show loader */
-
-        .no-js #loader {
-            display: none;
-        }
-
-        .js #loader {
-            display: block;
-            position: absolute;
-            left: 100px;
-            top: 0;
-
-            border: 16px solid #f3f3f3;
-            border-top: 16px solid #3498db;
-            border-radius: 50%;
-            width: 120px;
-            height: 120px;
-            animation: spin 2s linear infinite;
-        }
-
-        @keyframes spin {
-            0% {
-                transform: rotate(0deg);
-            }
-            100% {
-                transform: rotate(360deg);
-            }
-        }
-    </style>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://github.com/Modernizr/Modernizr/raw/master/modernizr.js"></script>
-    <script>
-        // Wait for window load
-        $(window).load(function () {
-            // Animate loader off screen
-            $("#loader").animate({
-                top: -200
-            }, 1500);
-        });
-    </script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
     <link rel="stylesheet" href="styles.css">
     <title>Sharad Shinde</title>
 </head>
 
 <body>
-    <div id="loader"></div>
     <section class="hero is-dark is-fullheight">
         <div class="hero-body">
             <div class="container">
@@ -138,6 +95,8 @@
     </div>
 
     <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
     <script src="tagcanvas.min.js" type="text/javascript"></script>
     <script src="tagcanvas-accel.js" type="text/javascript"></script>
