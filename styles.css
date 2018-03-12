@@ -6,6 +6,7 @@ body {
 
 section {
     padding: 20px 0px;
+    height: 100vh;
 }
 
 .footer-custom-border {
@@ -33,4 +34,8 @@ section {
     padding: 0 !important;
     background-color: #E9E581;
     border: 1px solid #DE1B1B;
+}
+
+footer {
+    padding: 10px;
 }
