@@ -1,6 +1,11 @@
 body {
     background: #2B2B2B;  /* #2B2B2B - bg, #DE1B1B - logo&btn, #F6F6F6-text,  #E9E581-extra things */
     color: #F6F6F6;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+section {
+    padding: 20px 0px;
 }
 
 .footer-custom-border {
