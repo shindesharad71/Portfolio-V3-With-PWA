@@ -1,4 +1,36 @@
+body {
+    background: #2B2B2B;  /* #2B2B2B - bg, #DE1B1B - logo&btn, #F6F6F6-text,  #E9E581-extra things */
+    color: #F6F6F6;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+section {
+    padding: 20px 0px;
+}
+
 .footer-custom-border {
     border-top: dashed 1px #B6B6B6;
     padding: 10px;
+}
+
+.social-icons a {
+    color: #F6F6F6;
+    padding-right: 10px; 
+}
+
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:focus, .btn-primary:focus-within, .btn-primary:visited {
+    background-color: #DE1B1B;
+    outline-color: #DE1B1B;
+    border-color: #DE1B1B;
+}
+
+.portfolio-button {
+    margin: 20px;
+}
+
+.portfolio-item {
+    margin: 0 !important;
+    padding: 0 !important;
+    background-color: #E9E581;
+    border: 1px solid #DE1B1B;
 }
