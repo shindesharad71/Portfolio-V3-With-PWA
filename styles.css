@@ -1,4 +1,14 @@
+body {
+    background: #2B2B2B;  /* #2B2B2B - bg, #DE1B1B - logo&btn, #F6F6F6-text,  #E9E581-extra things */
+    color: #F6F6F6;
+}
+
 .footer-custom-border {
     border-top: dashed 1px #B6B6B6;
     padding: 10px;
+}
+
+.social-icons a {
+    color: #F6F6F6;
+    padding-right: 10px; 
 }
