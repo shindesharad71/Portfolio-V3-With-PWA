@@ -17,3 +17,13 @@ section {
     color: #F6F6F6;
     padding-right: 10px; 
 }
+
+.btn-primary, .btn-primary:hover, .btn-primary:active {
+    background-color: #DE1B1B;
+    outline-color: #DE1B1B;
+    border-color: #DE1B1B;
+}
+
+.portfolio-button {
+    margin: 20px;
+}
