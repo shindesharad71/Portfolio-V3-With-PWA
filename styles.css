@@ -18,7 +18,7 @@ section {
     padding-right: 10px; 
 }
 
-.btn-primary, .btn-primary:hover, .btn-primary:active {
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:focus, .btn-primary:focus-within, .btn-primary:visited {
     background-color: #DE1B1B;
     outline-color: #DE1B1B;
     border-color: #DE1B1B;
@@ -26,4 +26,12 @@ section {
 
 .portfolio-button {
     margin: 20px;
+}
+
+.portfolio-item {
+    margin: 0 !important;
+    padding: 0 !important;
+    height: 300px;
+    background-color: #E9E581;
+    border: 1px solid #DE1B1B;
 }
