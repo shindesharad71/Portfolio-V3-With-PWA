@@ -31,7 +31,6 @@ section {
 .portfolio-item {
     margin: 0 !important;
     padding: 0 !important;
-    height: 300px;
     background-color: #E9E581;
     border: 1px solid #DE1B1B;
 }
