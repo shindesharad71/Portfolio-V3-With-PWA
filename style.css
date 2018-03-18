@@ -31,7 +31,7 @@ nav i {
 	top: 5px;
 }
 main {
-	background: url(../static/img/bg.png) repeat;
+	background: url(/static/img/bg.png) repeat;
 	padding-left: 190px;
 }
 ul.side-nav {
