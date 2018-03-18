@@ -400,6 +400,7 @@ small { display: none;}
 	    margin: 0 auto;
 	}
 	#intro.section {
-		background-position-x: 30%;
+		/* background-position-x: 30%; */
+		background-position-x: 70%;
 	}
 }
