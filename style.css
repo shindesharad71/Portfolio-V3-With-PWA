@@ -205,6 +205,7 @@ h3 {
 }
 .card i.right {
   margin-left: 10px;
+  margin-top: 20px;
 }
 a.hoverline {
 	border-bottom: 3px solid transparent !important;
