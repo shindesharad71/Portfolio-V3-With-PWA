@@ -1,5 +1,9 @@
 if ("serviceWorker" in navigator) {
-  navigator.serviceWorker.register("/sw.js").then(function() {
+  navigator.serviceWorker.register("./sw.js").then(function() {
+    const warningTitleCSS =
+      "color:red; font-size:60px; font-weight: bold; -webkit-text-stroke: 1px black;";
+    const warningDescCSS = "font-size: 18px;";
+    console.log("%cStop!", warningTitleCSS);
     console.log("SW registered!");
   });
 }
@@ -33,3 +37,15 @@ self.addEventListener("fetch", function(event) {
     })
   );
 });
+
+(function initScroll() {
+  new LazyLoad();
+  $(document).ready(function() {
+    $(".scrollspy").scrollSpy();
+    $(".button-collapse").sideNav({
+      menuWidth: 190,
+      edge: "left",
+      closeOnClick: true
+    });
+  });
+})();
