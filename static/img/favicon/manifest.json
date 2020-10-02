@@ -1,8 +1,8 @@
 {
   "name": "Sharad Shinde - Full Stack Developer",
   "short_name": "Portfolio",
-  "start_url": "../../../index.html",
-  "scope": "../../../index.html",
+  "start_url": "https://sharadshinde.in",
+  "scope": "https://sharadshinde.in",
   "display": "standalone",
   "background_color": "#fff",
   "theme_color": "#fff",
