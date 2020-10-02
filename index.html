@@ -2161,10 +2161,10 @@
     </main>
     <script src="lazy.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
     <script>
       new LazyLoad();
-      $(document).ready(function () {
+        $(document).ready(function () {
         $(".scrollspy").scrollSpy();
         $(".button-collapse").sideNav({
           menuWidth: 190,
@@ -2176,9 +2176,7 @@
       if ("serviceWorker" in navigator) {
         navigator.serviceWorker
           .register("/sw.js", { scope: "./" })
-          .then(function () {
-            console.log("SW registered!");
-          });
+          .then(_ => {});
       }
     </script>
   </body>
