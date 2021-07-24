@@ -2,7 +2,7 @@ self.addEventListener("install", function (event) {
   event.waitUntil(
     caches.open("portfolio").then(function (cache) {
       return cache.addAll([
-        "style.pure.css"
+        "styles.pure.css"
       ]);
     })
   );
