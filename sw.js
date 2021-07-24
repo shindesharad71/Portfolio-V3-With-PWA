@@ -2,8 +2,7 @@ self.addEventListener("install", function (event) {
   event.waitUntil(
     caches.open("portfolio").then(function (cache) {
       return cache.addAll([
-        "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css",
-        "https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css",
+        "style.pure.css"
       ]);
     })
   );
