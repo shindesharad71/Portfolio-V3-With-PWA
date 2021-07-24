@@ -2,7 +2,7 @@ self.addEventListener("install", function (event) {
   event.waitUntil(
     caches.open("portfolio").then(function (cache) {
       return cache.addAll([
-        "styles.pure.css"
+        "https://shrd.in/styles.pure.css"
       ]);
     })
   );
