@@ -137,7 +137,6 @@
         font-size: 16px;
         font-display: auto;
       }
-
       a {
         color: #009688;
       }
@@ -157,7 +156,7 @@
         text-align: center;
       }
       nav {
-        background: white;
+        background: #fff;
         box-shadow: none;
         height: 0;
       }
@@ -167,7 +166,8 @@
         top: 5px;
       }
       main {
-        background: url(./static/img/bg.webp) repeat;
+        background: url(/static/img/bg.webp)
+          repeat;
         padding-left: 190px;
       }
       ul.side-nav {
@@ -204,8 +204,8 @@
         background-color: #fafafa;
         border-left: 3px solid;
       }
-      ul.side-nav.fixed.table-of-contents li:not(.logo) a span,
-      ul#slide-out li:not(.logo) a span {
+      ul#slide-out li:not(.logo) a span,
+      ul.side-nav.fixed.table-of-contents li:not(.logo) a span {
         color: #333 !important;
       }
       li.logo span {
@@ -237,17 +237,18 @@
         height: 100vh;
       }
       #intro.section {
-        background: url(./static/img/sharad.webp) no-repeat top center/cover;
+        background: url(./static/img/sharad.webp)
+          no-repeat top center/cover;
         position: relative;
       }
       #intro.section .container {
-        color: white;
+        color: #fff;
         font-weight: 200;
         left: 0;
         position: absolute;
         top: 0;
       }
-      #intro.section .container *:not(span) {
+      #intro.section .container :not(span) {
         font-weight: 300;
         line-height: 150%;
         padding: 0 30px;
@@ -268,8 +269,6 @@
         width: 100%;
       }
       .waves-effect.waves-blue .waves-ripple {
-        /* The alpha value allows the text and background color
-   of the button to still show through. */
         background-color: rgba(33, 150, 243, 0.2);
       }
       .card {
@@ -301,7 +300,8 @@
         margin-bottom: -0.5rem;
         margin-top: 2rem;
       }
-      .card h6, .accomplishments {
+      .accomplishments,
+      .card h6 {
         font-weight: 300;
         letter-spacing: 1px;
         margin-top: 2rem;
@@ -390,7 +390,6 @@
       .card-action a.btn-floating {
         margin-bottom: 0;
       }
-
       #contact a:not(.btn-floating) {
         bottom: 6px;
         left: 20px;
@@ -435,7 +434,7 @@
       }
       @media (max-width: 992px) {
         main {
-          padding-left: 0px;
+          padding-left: 0;
           padding-top: 64px;
         }
         ul.side-nav a {
@@ -461,7 +460,6 @@
         .container {
           margin: 0 auto;
         }
-
         nav.hide-on-large.only.trigger {
           display: block;
           position: fixed;
@@ -476,8 +474,8 @@
           width: 100%;
           position: absolute;
         }
-        .name-title > span,
-        .name-title > a {
+        .name-title > a,
+        .name-title > span {
           position: relative;
           line-height: 20px;
         }
@@ -489,8 +487,8 @@
           display: block;
           font-size: 14px;
         }
-        h3,
-        .container {
+        .container,
+        h3 {
           position: relative;
           top: 64px;
         }
@@ -509,7 +507,7 @@
           line-height: 200%;
           margin: 30px 0 0;
         }
-        #intro.section .container *:not(span) {
+        #intro.section .container :not(span) {
           padding: 0;
         }
         .card .card-content .card-title {
